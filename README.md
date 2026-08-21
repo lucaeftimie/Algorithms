@@ -1,4 +1,4 @@
-````# algoritmi
+# algoritmi
 
 A personal collection of algorithm implementations in C, written for learning and reference. Each algorithm lives in its own source file and (where useful) comes with an explanation of the approach, complexity, and a worked example.
 
@@ -30,4 +30,4 @@ Algorithms planned or in progress will be tracked here as they're added — cate
 ## License
 
 No license specified yet — all rights reserved by default until one is added.
-````
+
