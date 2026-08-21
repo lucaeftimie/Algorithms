@@ -1,8 +1,8 @@
 # algoritmi
 
-A personal collection of algorithm implementations in C, written for learning and reference. Each algorithm lives in its own source file and (where useful) comes with an explanation of the approach, complexity, and a worked example.
+A collection of algorithm implementations in C, written for learning and reference.</br>
+Each algorithm lives in its own source file and (where useful) comes with an explanation of the approach, complexity, and a worked example.
 
-This repo is a work in progress — more algorithms will be added over time.
 
 ## Contents
 
@@ -12,7 +12,8 @@ This repo is a work in progress — more algorithms will be added over time.
 
 ## Structure
 
-Each algorithm is a standalone `.c` file that can be compiled and run independently. As the collection grows, related algorithms may be grouped into subfolders by category (e.g. `dp/`, `graphs/`, `sorting/`).
+Each algorithm is a standalone `.c` file that can be compiled and run independently. 
+-- subfolders by category (e.g. `dp/`, `graphs/`, `sorting/`).
 
 ## Building and running
 
@@ -26,6 +27,14 @@ gcc -o knapsack knapsack.c
 ## Roadmap
 
 Algorithms planned or in progress will be tracked here as they're added — categories of interest include sorting, searching, graph algorithms, and more dynamic programming problems.
+
+## Explanation
+
+### 0/1 Knapsack
+<img width="1343" height="575" alt="image" src="https://github.com/user-attachments/assets/a4c210b6-e9a8-4fa7-8cb0-6fde133406db" />
+
+
+
 
 ## License
 
