@@ -1,4 +1,4 @@
-# algoritmi
+# Algorithms
 
 A collection of algorithm implementations in C, written for learning and reference.</br>
 Each algorithm lives in its own source file and (where useful) comes with an explanation of the approach, complexity, and a worked example.
