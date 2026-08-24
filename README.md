@@ -1,8 +1,8 @@
 # Algorithms
 
-A collection of algorithm implementations in C, written for learning and reference.</br>
-Each algorithm lives in its own source file and (where useful) comes with an explanation of the approach, complexity, and a worked example.
-
+This is a collection of algorithms which helps me learn about how to think logically and how to write code in C.  
+Below you can see a contents table with the algorithms studied by me.
+I used Clion as a development tool, and compiled the code using the CMake build tool.
 
 ## Contents
 
@@ -13,9 +13,21 @@ Each algorithm lives in its own source file and (where useful) comes with an exp
 
 ## Structure
 
-Each algorithm is a standalone `.c` file that can be compiled and run independently. 
--- subfolders by category (e.g. `dp/`, `graphs/`, `sorting/`).
-
+Each algorithm is a standalone `.c` file that can be compiled and run independently.  
+The algorithms are organized in folders, based on programming techniques.
+```text
+Algorithms/
+├── dynamic_programming/
+│   └── knapsack.c
+│
+├── greddy_algorithms/
+│   └──
+│
+├── encoding_algorithms/
+│    └── huffman_encoding.c
+│
+└── README.md
+```
 ## Building and running
 
 Each file can be compiled individually with `gcc`:
@@ -23,6 +35,11 @@ Each file can be compiled individually with `gcc`:
 ```bash
 gcc -o knapsack knapsack.c
 ./knapsack
+```
+
+Or it can be built using CMake.
+```bash
+cmake commands that i don't yet know
 ```
 
 ## Roadmap
