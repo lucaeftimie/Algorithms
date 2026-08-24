@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<malloc.h>
+#include<string.h>
+#include<stdlib.h>
 
 
 // knapsack with maximum weight capacity of: W
@@ -12,6 +13,22 @@
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
+
+
+int knapsack_optimized(int W, int wt[], int val[], int n)
+{
+    int dp[W+1];
+    for (int i = 0; i <= W; i++) {
+        dp[i] = 0;
+    }
+
+    for (int i = 0; i < n; i++)
+        for (int w = W; w >= wt[i]; w--)
+            dp[w] = max(val[i] + dp[w - wt[i]], dp[w]);
+
+    return dp[W];
+}
+
 
 int knapsack(int W, int wt[], int val[], int n) {
     int i, w;
@@ -27,6 +44,7 @@ int knapsack(int W, int wt[], int val[], int n) {
             }else if (wt[i - 1] <= w) {
 
                 K[i][w] = max(val[i - 1] + K[i - 1][w - wt[i - 1]], K[i - 1][w]);
+
             }
 
             else {
@@ -39,6 +57,8 @@ int knapsack(int W, int wt[], int val[], int n) {
     return K[n][W];
 }
 
+
+
 int main() {
     int val[] = {6, 10, 12};
     int wt[] = {1, 2, 3};
@@ -46,7 +66,7 @@ int main() {
 
     int n = sizeof(val) / sizeof(val[0]);
 
-    printf("Maximum value in Knapsack = %d\n", knapsack(W, wt, val ,n));
+    printf("Maximum value in Knapsack = %d\n", knapsack_optimized(W, wt, val ,n));
 
     return 0;
 }

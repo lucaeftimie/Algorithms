@@ -8,7 +8,7 @@ Each algorithm lives in its own source file and (where useful) comes with an exp
 
 | Algorithm | File | Category | Time Complexity | Space Complexity |
 |---|---|---|---|---|
-| 0/1 Knapsack | [`knapsack.c`](./knapsack.c) | Dynamic Programming | O(n × W) | O(n × W) |
+| 0/1 Knapsack | [`dynamic_programming/knapsack.c`](dynamic_programming/knapsack.c) | Dynamic Programming | O(n × W) | O(n × W) |
 
 ## Structure
 
