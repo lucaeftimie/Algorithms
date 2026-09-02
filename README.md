@@ -52,9 +52,3 @@ Algorithms planned or in progress will be tracked here as they're added — cate
 <img width="1343" height="575" alt="image" src="https://github.com/user-attachments/assets/a4c210b6-e9a8-4fa7-8cb0-6fde133406db" />
 
 
-
-
-## License
-
-No license specified yet — all rights reserved by default until one is added.
-
